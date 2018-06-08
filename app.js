@@ -5,6 +5,9 @@ const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 
 const exphbs = require('express-handlebars');
+const mongoose = require('mongoose');
+
+mongoose.connect('localhost:27010/shoppingapp');
 
 const routes = require('./routes/index');
 
