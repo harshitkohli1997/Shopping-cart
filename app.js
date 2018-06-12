@@ -7,7 +7,13 @@ const logger = require('morgan');
 const exphbs = require('express-handlebars');
 const mongoose = require('mongoose');
 
-mongoose.connect('localhost:27010/shoppingapp');
+mongoose.connect('mongodb://harshit:scooby1234@ds257077.mlab.com:57077/social-dev')
+.then(() => {
+    console.log('mongodb connected')
+})
+.catch((err) => {
+    console.log(err);
+})
 
 const routes = require('./routes/index');
 
