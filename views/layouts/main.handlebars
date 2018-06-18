@@ -2,6 +2,10 @@
 <html>
   <head>
     <title>{{title}}</title>
+     <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="../../bootstrap-4.0.0-alpha.6-dist/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="bootstrap-4.0.0-alpha.6-dist/css/bootstrap.min.css">
+  <!--CSS-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link rel='stylesheet' href='/stylesheets/style.css' >
@@ -9,11 +13,13 @@
   </head>
   
   <body>
-    <div class="container">
-  {{> _nav}}  
+   
+  {{> _nav}} 
+  <div class="container"> 
     {{{body}}}
     
     </div>
+    {{> _footer}}
 <script
   src="https://code.jquery.com/jquery-1.12.4.min.js"
   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
